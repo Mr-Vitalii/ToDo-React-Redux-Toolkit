@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ToDo-React-Redux-Toolkit/static/css/main.0a84c249.css",
+    "main.js": "/ToDo-React-Redux-Toolkit/static/js/main.ea4d0f33.js",
+    "static/media/bg-desktop-dark.jpg": "/ToDo-React-Redux-Toolkit/static/media/bg-desktop-dark.36736e97bc166a4bfbc4.jpg",
+    "static/media/bg-desktop-light.jpg": "/ToDo-React-Redux-Toolkit/static/media/bg-desktop-light.42b9d5e189e077a74dcd.jpg",
+    "static/media/sprite.svg": "/ToDo-React-Redux-Toolkit/static/media/sprite.c696436605ca0eddd2f745536f7b6b61.svg",
+    "index.html": "/ToDo-React-Redux-Toolkit/index.html",
+    "main.0a84c249.css.map": "/ToDo-React-Redux-Toolkit/static/css/main.0a84c249.css.map",
+    "main.ea4d0f33.js.map": "/ToDo-React-Redux-Toolkit/static/js/main.ea4d0f33.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a84c249.css",
+    "static/js/main.ea4d0f33.js"
+  ]
+}
