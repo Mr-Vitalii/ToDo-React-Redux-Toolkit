@@ -1,0 +1,178 @@
+@import "../utils/placeholder.scss";
+@import "../theme/darkTheme.scss";
+
+
+.wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    width: 100%;
+
+    font-size: 18px;
+    font-weight: 300;
+
+    background: url(../assets/images/bg-desktop-light.jpg) no-repeat top;
+    background-color: $bg-color;
+    transition: all 0.4s;
+}
+
+
+.todo {
+    margin: 160px auto;
+
+    &__theme-toggle {
+        position: absolute;
+        top: 5%;
+        right: 6%;
+        border: none;
+        background-color: transparent;
+    }
+
+    &__header {
+        width: 600px;
+        padding: 10px;
+        color: $accent-text-color-light;
+    }
+
+    &__quotes-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 44px;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    &__body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        min-height: 350px;
+        padding: 20px;
+
+        font-family: "Roboto";
+        border-radius: 15px 15px 0px 0px;
+        padding-bottom: 40px;
+        overflow: hidden;
+        text-align: center;
+        background-color: $accent-text-color-light;
+        box-shadow: 0px -2px 6px 6px rgba(0, 0, 0, .2);
+        transition: all 0.4s;
+    }
+
+    &__add-task-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    &__button {
+        @extend %button;
+        padding: 9px 22px;
+        justify-content: flex-start;
+        max-width: 200px;
+
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.06em;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 600px;
+        padding: 20px;
+        border-radius: 0px 0px 15px 15px;
+        background-color: $accent-text-color-light;
+        box-shadow: 0px 14px 6px 6px rgba(0, 0, 0, .2);
+        transition: all 0.4s;
+    }
+
+    &__bottom-button {
+        padding: 10px 15px;
+        font-size: 16px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .todo {
+        font-size: 16px;
+
+        &__header {
+            width: 480px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+
+        &__body {
+            width: 480px;
+            padding: 15px;
+        }
+
+        &__bottom {
+            max-width: 480px;
+            padding: 15px;
+        }
+
+        &__bottom-button {
+            padding: 10px 10px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .todo {
+        font-size: 14px;
+
+
+        &__header {
+            max-width: 340px;
+        }
+
+        &__text {
+            font-size: 12px;
+        }
+
+        &__body {
+            max-width: 340px;
+            padding: 10px;
+        }
+
+        &__bottom {
+            max-width: 340px;
+            padding: 10px;
+        }
+
+        &__bottom-button {
+            padding: 10px 8px;
+            font-size: 12px;
+        }
+    }
+}

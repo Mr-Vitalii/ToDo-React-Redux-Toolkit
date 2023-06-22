@@ -1,0 +1,149 @@
+.layout.dark .wrapper {
+    background: url(../assets/images/bg-desktop-dark.jpg) no-repeat top;
+    background-color: $bg-color-veryDark;
+}
+
+.layout.dark .todo {
+    &__body {
+        background-color: $bg-color-dark;
+        color: $text-color-dark;
+    }
+
+    &__quotes-button {
+        background-color: $accent-color-dark;
+
+        &:hover,
+        &:focus {
+            background-color: $secondary-accent-color-dark;
+        }
+    }
+
+    &__button {
+        background-color: $accent-color-dark;
+
+        &:hover,
+        &:focus {
+            background-color: $secondary-accent-color-dark;
+        }
+    }
+
+    &__bottom {
+        background-color: $bg-color-dark;
+        color: $text-color-dark;
+    }
+
+    &__bottom-button {
+        color: $secondary-accent-color-dark;
+
+        &:hover,
+        &:focus {
+            color: $secondary-accent-color;
+        }
+    }
+}
+
+
+.layout.dark .task {
+    &__button {
+        background-color: $accent-color-dark;
+
+        &:hover,
+        &:focus {
+            background-color: $secondary-accent-color-dark;
+        }
+
+        &:first-of-type {
+            margin-right: 10px;
+        }
+    }
+}
+
+.layout.dark .quote {
+
+    &__button {
+        background-color: $accent-color-dark;
+
+        &:hover,
+        &:focus {
+            background-color: $secondary-accent-color-dark;
+        }
+    }
+}
+
+.layout.dark .filter-button {
+    color: $secondary-accent-color-dark;
+
+    &:hover,
+    &:focus {
+        color: $secondary-accent-color;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.layout.dark .task-modal {
+    border: 1px solid black;
+    background-color: rgb(34, 33, 33);
+    // color: white;
+
+
+    &__close-button {
+        position: absolute;
+        top: 5px;
+        right: 3px;
+        font-size: 1.3em;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        margin-bottom: 15px;
+    }
+
+    &__input {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px 10px;
+        border-radius: 4px;
+        outline: none;
+        border: 1px solid $accent-color;
+    }
+
+    &__button-container {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-top: auto;
+
+        & :first-child {
+            margin-right: 10px;
+        }
+    }
+
+    &__button {
+        background-color: rgb(79, 17, 136);
+
+        &:hover,
+        &:focus {
+            background-color: rgb(110, 8, 206);
+        }
+    }
+}

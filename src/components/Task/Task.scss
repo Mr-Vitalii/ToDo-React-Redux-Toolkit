@@ -1,0 +1,67 @@
+@import "../../assets/styles/CommonSettings.scss";
+@import "../../utils/variables.scss";
+@import "../../utils/placeholder.scss";
+
+
+
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__text-container {
+        flex-grow: 1;
+        max-width: 285px;
+        display: flex;
+        padding: 0 10px;
+        overflow-y: auto;
+    }
+
+    &__number {
+        margin-right: 10px
+    }
+
+    &__text {
+        overflow: auto
+    }
+
+    &__button-container {
+        justify-self: flex-end;
+    }
+
+    &__button {
+        @extend %button;
+        padding: 8px 28px;
+
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: 0.06em;
+
+        &:first-of-type {
+            margin-right: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .task {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px 10px;
+
+        &__text-container {
+            justify-content: center;
+            width: 80%;
+            max-width: 1000px;
+            margin-bottom: 5px;
+        }
+    }
+}

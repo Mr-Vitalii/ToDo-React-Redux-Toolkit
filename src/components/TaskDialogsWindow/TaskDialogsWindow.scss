@@ -1,0 +1,104 @@
+@import "../../utils/variables.scss";
+@import "../../utils/placeholder.scss";
+
+.task-modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+
+.task-modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 250px;
+    margin: auto;
+    padding: 15px;
+    inset: 0;
+    border-radius: 8px;
+    text-align: center;
+    background-color: white;
+    z-index: 99;
+
+
+    &__close-button {
+        position: absolute;
+        top: 5px;
+        right: 3px;
+        font-size: 1.3em;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__close-icon {
+
+        &:hover,
+        &:focus {
+            fill: $accent-color;
+        }
+    }
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        margin-bottom: 15px;
+    }
+
+    &__input {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px 10px;
+        border-radius: 4px;
+        outline: none;
+        border: 1px solid $accent-color;
+        caret-color: $accent-color;
+        font-size: 16px;
+
+        &::placeholder {
+            font-size: 14px;
+            opacity: 0.5;
+        }
+    }
+
+    &__error {
+        text-align: start;
+        margin-bottom: 10px;
+        color: red;
+    }
+
+    &__button-container {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-top: auto;
+
+        & :first-child {
+            margin-right: 10px;
+        }
+    }
+
+    &__button {
+        @extend %button;
+        padding: 9px 22px;
+
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.06em;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .task-modal {
+        max-width: 340px;
+    }
+}

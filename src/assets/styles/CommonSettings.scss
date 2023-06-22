@@ -1,0 +1,20 @@
+@import "../../utils/variables.scss";
+
+*,
+::before,
+::after {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.list-style {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: $primary-text-fonts, sans-serif;
+}

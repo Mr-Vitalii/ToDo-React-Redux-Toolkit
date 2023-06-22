@@ -1,0 +1,29 @@
+:root {
+    --accent-color: rgb(212, 4, 195);
+    --accent-color-dark: rgb(110, 8, 206);
+}
+
+//* Fonts 
+
+$primary-text-fonts: Roboto;
+$accent-text-fonts: Raleway;
+
+//* Light theme 
+
+$text-color-light: rgb(77, 70, 70);
+$accent-text-color-light: rgb(255, 255, 255);
+
+$accent-color: rgb(212, 4, 195);
+$secondary-accent-color: rgb(155, 0, 142);
+
+$bg-color: rgb(241, 228, 241);
+
+//* Dark theme  
+
+$text-color-dark: rgb(230, 230, 230);
+
+$bg-color-dark: rgb(34, 33, 33);
+$bg-color-veryDark: rgb(20, 20, 20);
+
+$accent-color-dark: rgb(79, 17, 136);
+$secondary-accent-color-dark:rgb(110, 8, 206);

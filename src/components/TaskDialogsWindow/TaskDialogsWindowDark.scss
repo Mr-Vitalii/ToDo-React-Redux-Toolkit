@@ -1,0 +1,41 @@
+@import "../../utils/variables.scss";
+@import "../../theme/darkTheme.scss";
+
+
+
+.task-modal.dark {
+    background-color: $bg-color-dark;
+    color: $text-color-dark;
+}
+
+.task-modal {
+
+    &.dark &__close-icon {
+        fill: $text-color-dark;
+
+        &:hover,
+        &:focus {
+            fill: $secondary-accent-color-dark;
+        }
+    }
+
+    &.dark &__input {
+        background-color: $bg-color-dark;
+        color: $text-color-dark;
+        border: 1px solid $secondary-accent-color-dark;
+        caret-color: $secondary-accent-color-dark;
+
+        &::placeholder {
+            color: $text-color-dark;
+        }
+    }
+
+    &.dark &__button {
+        background-color: $accent-color-dark;
+
+        &:hover,
+        &:focus {
+            background-color: $secondary-accent-color-dark;
+        }
+    }
+}
